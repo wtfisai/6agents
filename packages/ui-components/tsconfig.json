@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "module": "ES2020",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
     "declaration": true,
     "outDir": "dist",
     "rootDir": "src",

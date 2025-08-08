@@ -8,11 +8,12 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:web": "pnpm --filter @designsync/web dev",
-    "dev:api": "pnpm --filter @designsync/api dev",
+    "dev": "turbo run dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
     "test": "turbo run test",
+    "deploy:dev": "pnpm build && firebase deploy --only hosting:dev",
+    "deploy:prod": "pnpm build && firebase deploy --only hosting:prod",
     "setup": "bash scripts/setup.sh"
   },
   "devDependencies": {
